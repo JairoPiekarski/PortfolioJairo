@@ -1,0 +1,57 @@
+.projects__subtitle{
+    font-size: var(--fs-24);
+    margin-bottom: 0.5rem;
+}
+
+.projects__container{
+    width: 100%;
+}
+
+.projects__wrapper{
+    width: 100%;
+}
+
+.projects__content{
+    background-color: var(--color-bg-darker);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: .5rem;
+}
+
+.projects__img{
+    width: 80%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: "";
+}
+
+.swipper-button{
+    color: var(--color-button);
+    transition: .3s ease;
+}
+
+.swipper-button:hover,
+.swipper-button:active{
+    color: var(--highlight);
+}
+
+/* ------------------ Media query ------------------ */
+
+/* Estilos para telas maiores (tablets) */
+@media screen and (min-width: 768px) {
+    .projects__subtitle{
+        font-size: var(--fs-30);
+    }
+
+    .projects__img{
+        width: 70%;
+    }
+}
+
+/* Estilos para telas maiores (desktops) */
+@media screen and (min-width: 1024px) {
+    
+}

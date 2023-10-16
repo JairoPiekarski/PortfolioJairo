@@ -1,0 +1,78 @@
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.hero__title{
+    font-size: var(--fs-36);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero__subtitle{
+    font-size: var(--fs-24);
+    color: var(--color-text);
+    font-weight: var(--fw-medium);
+    margin: 1rem 0 2rem;
+}
+
+.hero__description{
+    font-size: var(--fs-14);
+    color: var(--color-text-lighter);
+}
+
+.hero__social{
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon{
+    font-size: var(--fs-24);
+    color: var(--color-button);
+}
+
+.bouncing-animation{    
+    transition: transform 0.4s ease-in-out;
+}
+
+.bouncing-animation:nth-child(1){
+    animation: bounce 1.2s infinite;
+}
+
+.bouncing-animation:nth-child(2){
+    animation: bounce 1.2s infinite .4s;
+}
+
+.bouncing-animation:nth-child(3){
+    animation: bounce 1.2s infinite .8s;
+}
+
+.social-icon:hover,
+.social-icon:active{
+    color: var(--color-highlight);
+}
+
+/* ------------------ Media query ------------------ */
+
+/* Estilos para telas maiores (tablets) */
+@media screen and (min-width: 768px) {
+    .hero__title{
+        font-size: var(--fs-40);
+    }
+
+    .hero__subtitle{
+        font-size: var(--fs-30);
+    }
+
+    .hero__description{
+        font-size: var(--fs-18);
+    }
+
+    .social-icon{
+        font-size: var(--fs-30);
+    }
+}
+
+/* Estilos para telas maiores (desktops) */
+@media screen and (min-width: 1024px) {
+    
+}

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('navbar.css');
+@import url('hero.css');
+@import url('about.css');
+@import url('skills.css');
+@import url('projects.css');
+@import url('contact.css');
+
+/* ------------------ Variáveis ------------------ */
+
+:root {
+    /* Fonts */
+    --ff-roboto: 'Roboto', sans-serif;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-30: 1.875rem;
+    --fs-36: 2.25rem;
+    --fs-40: 2.5rem;
+    --fs-44: 2.75rem;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* Cores */
+    --color-bg: #f0f0f0;
+    --color-bg-darker: #d8cfcf;
+    --color-title: #0f0f0f;
+    --color-text: #383535;
+    --color-text-lighter: #696767;
+    --color-highlight: #3498db;
+    --color-button: #9b59b6;
+    --color-hover: #8e44ad;
+}
+
+/* ------------------ Setup da página ------------------ */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    margin: 0 0 4rem 0;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-regular);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-title);
+    font-weight: var(--fw-bold);
+}
+
+/* ------------------ Classes Reutilizáveis ------------------ */
+
+.section {
+    padding: 2rem;
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    font-size: var(--fs-18);
+    background-color: var(--color-button);
+    padding: .4rem .8rem;
+    border-radius: 7px;
+    color: var(--color-highlight);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: .4s;
+}
+
+.button:hover,
+.button:active {
+    background-color: var(--color-highlight);
+    color: var(--color-hover);
+}
+
+.button--small {
+    font-size: var(--fs-16);
+    color: var(--color-button);
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease
+}
+
+.button--small:hover,
+.button--small:active {
+    color: var(--color-highlight);
+    transform: translateX(.25rem);
+}
+
+.highlight {
+    color: var(--color-highlight);
+}
+
+.container__header {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.container__header-title {
+    font-size: var(--fs-36);
+    font-weight: bold;
+}
+
+.container__header-subtitle {
+    font-size: var(--fs-14);
+    color: var(--color-text-lighter);
+}
+
+
+
+/* ------------------ Keyframes ------------------ */
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+/* ------------------ Media query ------------------ */
+
+/* Estilos para telas maiores (tablets) */
+@media screen and (min-width: 768px) {
+    body{
+        font-size: var(--fs-18);
+    }
+
+    .button{
+        font-size: var(--fs-20);
+        padding: .8rem 1.2rem;
+        font-weight: var(--fw-medium);
+    }
+
+    .button--small{
+        font-size: var(--fs-18);
+    }
+
+    .container__header-subtitle{
+        font-size: var(--fs-16);
+    }
+
+    .container__header-title{
+        font-size: var(--fs-40);
+    }
+
+    .container__header-subtitle{
+        font-size: var(--fs-18);
+    }
+}
+
+/* Estilos para telas maiores (desktops) */
+@media screen and (min-width: 1024px) {
+    
+}

@@ -1,0 +1,86 @@
+.contact__info{
+    padding: .8rem;
+    width: 100%;
+    background-color: var(--color-bg-darker);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+    gap: 0.8rem;
+}
+
+.contact__information{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact__information-header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__icon{
+    font-size: var(--fs-18);
+    color: var(--color-highlight);
+}
+
+.contact__form{
+    padding: .8rem;
+    width: 100%;
+    background-color: var(--color-bg-darker);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+.contact__label{
+    color: var(--color-title);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.4rem;
+}
+
+.contact__input{
+    width: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--ff-roboto);
+    font-size: var(--fs-16);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem .25rem;
+    border-radius: .25rem;
+}
+
+.contact__content{
+    margin-bottom: 1rem;
+}
+
+/* ------------------ Media query ------------------ */
+
+/* Estilos para telas maiores (tablets) */
+@media screen and (min-width: 768px) {
+    #contact .container__content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .contact__info{
+        align-self: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+/* Estilos para telas maiores (desktops) */
+@media screen and (min-width: 1024px) {
+    
+}
