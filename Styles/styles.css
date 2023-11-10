@@ -209,5 +209,7 @@ h4 {
 
 /* Estilos para telas maiores (desktops) */
 @media screen and (min-width: 1024px) {
-    
+    .section{
+        min-height: 100vh;
+    }
 }
