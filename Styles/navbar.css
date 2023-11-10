@@ -1,5 +1,5 @@
 .header {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -10,7 +10,7 @@
 }
 
 .nav {
-    max-width: 968px;
+    max-width: 100vw;
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
@@ -131,14 +131,18 @@
         top: 0;
         bottom: initial;
         border-radius: 0;
-        
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
     }
 
     .nav{
+        width: 100%;
         height: 4rem;
         gap: 1rem;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .nav__close,
@@ -148,12 +152,13 @@
 
     .nav__menu{
         position: relative;
-        margin-left: 20%;
         background-color: transparent;
         box-shadow: none;
         height: 4rem;
-        bottom: 0;
+        bottom: .5rem;
         border-radius: none;
+        display: flex;
+        justify-content: center;
     }
 
     .nav__list{
@@ -162,7 +167,7 @@
     }
 
     .nav__link{
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }

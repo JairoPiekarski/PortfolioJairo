@@ -52,3 +52,56 @@ let swiper = new Swiper(".projects__wrapper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+
+
+document.getElementById("form-send").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    console.log("clicou")
+
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var projeto = document.getElementById("projeto").value;
+    var mensagem = document.getElementById("mensagem").value;
+
+    function validarEmail(email) {
+        var regex = /\S+@\S+\.\S+/;
+        return regex.test(email);
+    }
+
+    if (!nome || !email || !projeto || !mensagem) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
+
+    if (!validarEmail(email)) {
+        alert("Por favor, forneça um endereço de e-mail válido.");
+        return;
+    }
+
+    var dados = {
+        nome: nome,
+        email: email,
+        projeto: projeto,
+        mensagem: mensagem,
+    };
+
+    fetch("Scripts/processar_formulario.php", {
+        method: "POST",
+        body: JSON.stringify(dados),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+        .then(function (response) {
+            if (response.ok) {
+                alert("Obrigado por entrar em contato!");
+            } else {
+                console.error("Erro ao enviar o formulário.");
+            }
+        })
+        .catch(function (error) {
+            console.error("Erro ao enviar o formulário: " + error);
+        });
+});

@@ -78,7 +78,7 @@
             <div class="container hero__container">
                 <div class="hero__content">
                     <h1 class="hero__title">Jairo Vinicius <span class="highlight">Piekarski</span></h1>
-                    <h3 class="hero__subtitle">Desenvolvedor full-stack</h3>
+                    <h3 class="hero__subtitle">Desenvolvedor Frontend</h3>
                     <p class="hero__description">Código é a minha paleta, a web é a minha tela!</p>
                 </div>
                 <a href="#contact" class="button hero__contact">Entre em contato</a>
@@ -330,27 +330,27 @@
                     <form action="" class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Nome</label>
-                                <input type="text" class="contact__input">
+                                <label for="nome" class="contact__label">Nome</label>
+                                <input type="text" class="contact__input" id="nome">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">E-mail</label>
-                                <input type="email" class="contact__input">
+                                <label for="email" class="contact__label">E-mail</label>
+                                <input type="email" class="contact__input" id="email" autocomplete="email">
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Projeto</label>
-                            <input type="text" class="contact__input">
+                            <label for="projeto" class="contact__label">Projeto</label>
+                            <input type="text" class="contact__input" id="projeto">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Mensagem</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="mensagem" class="contact__label">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
                         <div>
-                            <a href="#" class="button">
+                            <button type="button" class="button" id="form-send">
                                 Enviar
                                 <i class="fa-solid fa-paper-plane"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
