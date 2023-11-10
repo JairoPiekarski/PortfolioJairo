@@ -130,6 +130,8 @@
     .header{
         top: 0;
         bottom: initial;
+        border-radius: 0;
+        
     }
 
     .nav{
@@ -151,7 +153,7 @@
         box-shadow: none;
         height: 4rem;
         bottom: 0;
-        border-radius: 0;
+        border-radius: none;
     }
 
     .nav__list{
