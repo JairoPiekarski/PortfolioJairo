@@ -77,13 +77,74 @@
     border-radius: 50%;
     background: 
         radial-gradient(closest-side, var(--color-bg-darker) 79%, transparent 80% 100%),
-        conic-gradient(var(--color-highlight) 75%, var(--color-hover) 0);    
+        conic-gradient(var(--color-hover) 50%, var(--color-highlight) 0);    
 }
 
+.progress-html{
+    background: 
+        radial-gradient(closest-side, var(--color-bg-darker) 79%, transparent 80% 100%),
+        conic-gradient(var(--color-hover) 80%, var(--color-highlight) 0);
+}
+
+.progress-css{
+    background: 
+        radial-gradient(closest-side, var(--color-bg-darker) 79%, transparent 80% 100%),
+        conic-gradient(var(--color-hover) 80%, var(--color-highlight) 0);
+}
+
+.progress-js{
+    background: 
+        radial-gradient(closest-side, var(--color-bg-darker) 79%, transparent 80% 100%),
+        conic-gradient(var(--color-hover) 50%, var(--color-highlight) 0);
+}
+
+.progress-python{
+    background: 
+        radial-gradient(closest-side, var(--color-bg-darker) 79%, transparent 80% 100%),
+        conic-gradient(var(--color-hover) 50%, var(--color-highlight) 0);
+}
+
+.progress-csharp{
+    background: 
+        radial-gradient(closest-side, var(--color-bg-darker) 79%, transparent 80% 100%),
+        conic-gradient(var(--color-hover) 40%, var(--color-highlight) 0);
+}
+
+.progress-sql{
+    background: 
+        radial-gradient(closest-side, var(--color-bg-darker) 79%, transparent 80% 100%),
+        conic-gradient(var(--color-hover) 40%, var(--color-highlight) 0);
+}
+
+
 .skills__progress-bar::before{
-    content: "75%";
+    content: "50%";
     font-weight: bold;
     color: var(--color-hover);
+}
+
+.progress-html::before{
+    content: "80%";
+}
+
+.progress-css::before{
+    content: "80%";
+}
+
+.progress-js::before{
+    content: "50%";
+}
+
+.progress-python::before{
+    content: "50%";
+}
+
+.progress-csharp::before{
+    content: "40%";
+}
+
+.progress-sql::before{
+    content: "40%";
 }
 
 /* ------------------ Media query ------------------ */
