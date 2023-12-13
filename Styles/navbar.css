@@ -104,6 +104,7 @@
 }
 
 .button__language:hover,
+.button__language a:hover,
 .button__language:active {
     color: var(--color-highlight);
 }

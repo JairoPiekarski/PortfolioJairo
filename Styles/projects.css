@@ -20,7 +20,10 @@
 }
 
 .projects__img{
-    width: 80%;
+    max-height: 70vh;
+}
+.flutter{
+    max-width: 20vw;
 }
 
 .swiper-button-next::after,
